@@ -1,0 +1,23 @@
+/*
+ * write5.c
+ *
+ * Write a string to file, multiple bytes at a time.  Does not require any
+ * of the other system calls to be implemented.
+ *
+ */
+
+#include "syscall.h"
+
+int
+main (int argc, char *argv[])
+{
+    char *str = "rosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyourosesareredvioletsareblueIloveNachosandsodoyou";
+    
+    char *filename = "openfile2";
+    int fd1 = open(filename);
+    
+    int r = write (fd1, str, 1242);
+    printf("written bytes: %d\n", r);
+
+    return 0;
+}

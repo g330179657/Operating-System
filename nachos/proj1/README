@@ -1,0 +1,4 @@
+group members: Jiahui Han; Xianjie Song; Xiji Yang;
+Jiahui wrote all the implementation, xianjie and Xiji wrote all the tests. 
+Every test was exactly what we expected. According to the testing instructions on writeup, 
+we set up different tests to test whether our implementation is behaving as we expect. 
